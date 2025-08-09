@@ -11,6 +11,8 @@
 #define SCREEN_WIDTH 1440
 #define SCREEN_HEIGHT 1280
 
+#define INTERACTION_EPS 1e-6f
+
 typedef unsigned char i8;
 typedef unsigned short i16;
 typedef unsigned int i32;

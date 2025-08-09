@@ -8,6 +8,7 @@
 #include <SDL2/SDL_stdinc.h>
 #include <SDL2/SDL_timer.h>
 #include <SDL2/SDL_video.h>
+#include <stdio.h>
 
 static SDL_Window *window;
 static SDL_GLContext glContext;
@@ -49,6 +50,7 @@ bool init (const char *title) {
 }
 
 void run() {
+	printf("Key controls:\n\tEsc to quit;\n\tSpace to restart and randomize;\n\t'r' to restart;\n\t's' to save current model;\n\t'l' to load last model;\n\t'm' to apply motion blur;\n\t'b' to apply bounds;\n");
 	i8 running = true;
 	SDL_Event event;
 
@@ -58,6 +60,7 @@ void run() {
 	float fps = 0.0f;
 
 	allocate_particles();
+	// init_defaults();
 	// load_model("model.txt");
 	reset_particles();
 

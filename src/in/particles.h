@@ -16,7 +16,8 @@ typedef struct {
 	int count;
 } ParticleGroup;
 
-#define MAX_GROUP_PARTICLES 300
+#define MAX_GROUP_PARTICLES 600
+#define MIN_GROUP_PARTICLES 200
 
 extern ParticleGroup Groups[GROUP_TYPES];
 extern float Forces[GROUP_TYPES][GROUP_TYPES];
@@ -47,3 +48,5 @@ extern int motionBlur;
 
 void save_model(const char *fname);
 void load_model(const char *fname);
+
+void init_defaults();

@@ -6,7 +6,7 @@ int main(void) {
 	if(!init("LifeSim")) {
 		return 1;
 	}
-
+	
 	run();
 
 	cleanup();
